@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container" id="login-container">
+        <h1>Login</h1>
+        <input type="email" id="login-email" placeholder="Email">
+        <input type="password" id="login-password" placeholder="Password">
+        <button id="login-btn">Login</button>
+        <p id="login-error"></p>
+    </div>
+
+    <div class="container" id="admin-container" style="display:none;">
+        <h1>Admin Dashboard</h1>
+        <h2>Add Student</h2>
+        <input type="text" id="student-firstname" placeholder="Name">
+        <input type="number" id="Student_ID" placeholder="Student Id">
+        <input type="email" id="student-email" placeholder="Email">
+        <input type="password" id="student-password" placeholder="Password">
+        <input type="text" id="student-cnic" placeholder="CNIC">
+        <button id="add-student-btn">Add Student</button>
+
+        <h2>Upload Marks</h2>
+        <input type="text" id="course" placeholder="Course">
+        <input type="text" id="student-id" placeholder="Student Id">
+        <input type="number" id="marks" placeholder="Marks">
+        <input type="number" id="total-marks" placeholder="Total Marks">
+        <input type="text" id="grade" placeholder="Grade">
+        <button id="upload-marks-btn">Upload Marks</button> 
+        <button id="logout-admin-btn">Logout</button>
+    </div>
+
+
+    <div class="container" id="student-container" style="display:none;">
+        <h1>Student Dashboard</h1>
+        <h2>Profile</h2>
+        <input type="text" id="profile-firstname" placeholder="First Name">
+        <input type="text" id="profile-lastname" placeholder="Student id">
+        <input type="text" id="profile-cnic" placeholder="CNIC">
+        <button id="update-profile-btn">Update Profile</button>
+        <p id="update-profile-message"></p>
+
+        <h2>Check Results</h2>
+        <input type="text" id="rollno" placeholder="Enter rollno">
+        <button id="check-result-btn">Check Result</button>
+        <div id="result-display"></div>
+        <button id="logout-student-btn">Logout</button>
+    </div>
+   
+    <script type="module" src="app2.js"></script>
+</body>
+</html>
